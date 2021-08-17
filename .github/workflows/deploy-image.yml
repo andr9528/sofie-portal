@@ -83,3 +83,4 @@ jobs:
       - name: Deployment failed
         if: ${{ !contains(steps.deploymentRequest.outputs.response, 'success') }}
         run: echo ${{ steps.deploymentRequest.outputs.response }} && exit 1
+
